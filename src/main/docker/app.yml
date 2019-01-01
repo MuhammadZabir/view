@@ -1,0 +1,20 @@
+version: '2'
+services:
+    view-app:
+        image: view
+        environment:
+            # - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mariadb://view-mariadb:3306/view
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=view-elasticsearch:9300
+        ports:
+            - 8080:8080
+    view-mariadb:
+        extends:
+            file: mariadb.yml
+            service: view-mariadb
+    view-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: view-elasticsearch
