@@ -1,0 +1,25 @@
+
+{
+    "viewApp": {
+        "commentIssue" : {
+            "home": {
+                "title": "Comment Issues",
+                "createLabel": "Buat Comment Issue baru",
+                "createOrEditLabel": "Buat atau edit Comment Issue",
+                "search": "Cari Comment Issue"
+            },
+            "created": "Comment Issue dengan id {{ param }} telah dibuat",
+            "updated": "Comment Issue dengan id {{ param }} telah diperbaharui",
+            "deleted": "Comment Issue dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Comment Issue {{ id }}?"
+            },
+            "detail": {
+                "title": "Comment Issue"
+            },
+            "comment": "Comment",
+            "user": "User",
+            "issue": "Issue"
+        }
+    }
+}

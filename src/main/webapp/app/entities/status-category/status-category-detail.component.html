@@ -1,0 +1,41 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="statusCategory">
+            <h2><span jhiTranslate="viewApp.statusCategory.detail.title">Status Category</span> {{statusCategory.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="viewApp.statusCategory.name">Name</span></dt>
+                <dd>
+                    <span>{{statusCategory.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="viewApp.statusCategory.point">Point</span></dt>
+                <dd>
+                    <span>{{statusCategory.point}}</span>
+                </dd>
+                <dt><span jhiTranslate="viewApp.statusCategory.main">Main</span></dt>
+                <dd>
+                    <span>{{statusCategory.main}}</span>
+                </dd>
+                <dt><span jhiTranslate="viewApp.statusCategory.pointConfig">Point Config</span></dt>
+                <dd>
+                    <div *ngIf="statusCategory.pointConfig">
+                        <a [routerLink]="['/point-config', statusCategory.pointConfig?.id, 'view']">{{statusCategory.pointConfig?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/status-category', statusCategory.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

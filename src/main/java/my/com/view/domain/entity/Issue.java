@@ -15,6 +15,9 @@ import java.util.Set;
 @Document(indexName = "issue")
 public class Issue extends AbstractAuditingEntity {
 
+    public static final String CATEGORY_DEFAULT = "Normal";
+    public static final String ISSUE_DEFAULT = "Normal";
+
     @NotNull
     @Column(name = "name", nullable = false)
     private String name;

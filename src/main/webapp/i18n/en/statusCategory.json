@@ -1,0 +1,26 @@
+
+{
+    "viewApp": {
+        "statusCategory" : {
+            "home": {
+                "title": "Status Categories",
+                "createLabel": "Create a new Status Category",
+                "createOrEditLabel": "Create or edit a Status Category",
+                "search": "Search for Status Category"
+            },
+            "created": "A new Status Category is created with identifier {{ param }}",
+            "updated": "A Status Category is updated with identifier {{ param }}",
+            "deleted": "A Status Category is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Status Category {{ id }}?"
+            },
+            "detail": {
+                "title": "Status Category"
+            },
+            "name": "Name",
+            "point": "Point",
+            "main": "Main",
+            "pointConfig": "Point Config"
+        }
+    }
+}

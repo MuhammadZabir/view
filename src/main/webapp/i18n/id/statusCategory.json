@@ -1,0 +1,26 @@
+
+{
+    "viewApp": {
+        "statusCategory" : {
+            "home": {
+                "title": "Status Categories",
+                "createLabel": "Buat Status Category baru",
+                "createOrEditLabel": "Buat atau edit Status Category",
+                "search": "Cari Status Category"
+            },
+            "created": "Status Category dengan id {{ param }} telah dibuat",
+            "updated": "Status Category dengan id {{ param }} telah diperbaharui",
+            "deleted": "Status Category dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Status Category {{ id }}?"
+            },
+            "detail": {
+                "title": "Status Category"
+            },
+            "name": "Name",
+            "point": "Point",
+            "main": "Main",
+            "pointConfig": "Point Config"
+        }
+    }
+}

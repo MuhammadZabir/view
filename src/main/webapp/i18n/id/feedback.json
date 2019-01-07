@@ -1,0 +1,26 @@
+
+{
+    "viewApp": {
+        "feedback" : {
+            "home": {
+                "title": "Feedbacks",
+                "createLabel": "Buat Feedback baru",
+                "createOrEditLabel": "Buat atau edit Feedback",
+                "search": "Cari Feedback"
+            },
+            "created": "Feedback dengan id {{ param }} telah dibuat",
+            "updated": "Feedback dengan id {{ param }} telah diperbaharui",
+            "deleted": "Feedback dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Feedback {{ id }}?"
+            },
+            "detail": {
+                "title": "Feedback"
+            },
+            "subject": "Subject",
+            "description": "Description",
+            "rating": "Rating",
+            "user": "User"
+        }
+    }
+}

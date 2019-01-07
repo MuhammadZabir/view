@@ -1,0 +1,26 @@
+
+{
+    "viewApp": {
+        "achievement" : {
+            "home": {
+                "title": "Achievements",
+                "createLabel": "Buat Achievement baru",
+                "createOrEditLabel": "Buat atau edit Achievement",
+                "search": "Cari Achievement"
+            },
+            "created": "Achievement dengan id {{ param }} telah dibuat",
+            "updated": "Achievement dengan id {{ param }} telah diperbaharui",
+            "deleted": "Achievement dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Achievement {{ id }}?"
+            },
+            "detail": {
+                "title": "Achievement"
+            },
+            "status": "Status",
+            "user": "User",
+            "department": "Department",
+            "criteria": "Criteria"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="issueDifficulty">
+            <h2><span jhiTranslate="viewApp.issueDifficulty.detail.title">Issue Difficulty</span> {{issueDifficulty.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="viewApp.issueDifficulty.name">Name</span></dt>
+                <dd>
+                    <span>{{issueDifficulty.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="viewApp.issueDifficulty.value">Value</span></dt>
+                <dd>
+                    <span>{{issueDifficulty.value}}</span>
+                </dd>
+                <dt><span jhiTranslate="viewApp.issueDifficulty.pointConfig">Point Config</span></dt>
+                <dd>
+                    <div *ngIf="issueDifficulty.pointConfig">
+                        <a [routerLink]="['/point-config', issueDifficulty.pointConfig?.id, 'view']">{{issueDifficulty.pointConfig?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/issue-difficulty', issueDifficulty.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

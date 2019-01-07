@@ -1,0 +1,26 @@
+
+{
+    "viewApp": {
+        "permission" : {
+            "home": {
+                "title": "Permissions",
+                "createLabel": "Buat Permission baru",
+                "createOrEditLabel": "Buat atau edit Permission",
+                "search": "Cari Permission"
+            },
+            "created": "Permission dengan id {{ param }} telah dibuat",
+            "updated": "Permission dengan id {{ param }} telah diperbaharui",
+            "deleted": "Permission dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Permission {{ id }}?"
+            },
+            "detail": {
+                "title": "Permission"
+            },
+            "name": "Name",
+            "description": "Description",
+            "action": "Action",
+            "role": "Role"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="20190101194328-2" author="zabir">
+        
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="achievement"
+                                 constraintName="fk_achievement_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="department_id"
+                                 baseTableName="achievement"
+                                 constraintName="fk_achievement_department_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="department"/>
+
+        <addForeignKeyConstraint baseColumnNames="criteria_id"
+                                 baseTableName="achievement"
+                                 constraintName="fk_achievement_criteria_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="criteria"/>
+
+    </changeSet>
+</databaseChangeLog>

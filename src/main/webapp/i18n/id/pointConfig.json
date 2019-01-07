@@ -1,0 +1,27 @@
+
+{
+    "viewApp": {
+        "pointConfig" : {
+            "home": {
+                "title": "Point Configs",
+                "createLabel": "Buat Point Config baru",
+                "createOrEditLabel": "Buat atau edit Point Config",
+                "search": "Cari Point Config"
+            },
+            "created": "Point Config dengan id {{ param }} telah dibuat",
+            "updated": "Point Config dengan id {{ param }} telah diperbaharui",
+            "deleted": "Point Config dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Point Config {{ id }}?"
+            },
+            "detail": {
+                "title": "Point Config"
+            },
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "issueDifficulty": "Issue Difficulty",
+            "company": "Company",
+            "statusCategory": "Status Category"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="pointConfig">
+            <h2><span jhiTranslate="viewApp.pointConfig.detail.title">Point Config</span> {{pointConfig.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="viewApp.pointConfig.startDate">Start Date</span></dt>
+                <dd>
+                    <span>{{pointConfig.startDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="viewApp.pointConfig.endDate">End Date</span></dt>
+                <dd>
+                    <span>{{pointConfig.endDate}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/point-config', pointConfig.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

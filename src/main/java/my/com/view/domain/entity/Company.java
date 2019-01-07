@@ -17,7 +17,7 @@ public class Company extends AbstractAuditingEntity {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "company")
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER, mappedBy = "company")
     private Set<Department> departments = new HashSet<>();
 
     @OneToOne

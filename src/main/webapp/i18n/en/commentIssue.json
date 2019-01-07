@@ -1,0 +1,25 @@
+
+{
+    "viewApp": {
+        "commentIssue" : {
+            "home": {
+                "title": "Comment Issues",
+                "createLabel": "Create a new Comment Issue",
+                "createOrEditLabel": "Create or edit a Comment Issue",
+                "search": "Search for Comment Issue"
+            },
+            "created": "A new Comment Issue is created with identifier {{ param }}",
+            "updated": "A Comment Issue is updated with identifier {{ param }}",
+            "deleted": "A Comment Issue is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Comment Issue {{ id }}?"
+            },
+            "detail": {
+                "title": "Comment Issue"
+            },
+            "comment": "Comment",
+            "user": "User",
+            "issue": "Issue"
+        }
+    }
+}

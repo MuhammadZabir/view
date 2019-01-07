@@ -1,0 +1,26 @@
+
+{
+    "viewApp": {
+        "issueDifficulty" : {
+            "home": {
+                "title": "Issue Difficulties",
+                "createLabel": "Buat Issue Difficulty baru",
+                "createOrEditLabel": "Buat atau edit Issue Difficulty",
+                "search": "Cari Issue Difficulty"
+            },
+            "created": "Issue Difficulty dengan id {{ param }} telah dibuat",
+            "updated": "Issue Difficulty dengan id {{ param }} telah diperbaharui",
+            "deleted": "Issue Difficulty dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Issue Difficulty {{ id }}?"
+            },
+            "detail": {
+                "title": "Issue Difficulty"
+            },
+            "name": "Name",
+            "value": "Value",
+            "issue": "Issue",
+            "pointConfig": "Point Config"
+        }
+    }
+}

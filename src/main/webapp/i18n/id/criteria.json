@@ -1,0 +1,27 @@
+
+{
+    "viewApp": {
+        "criteria" : {
+            "home": {
+                "title": "Criteria",
+                "createLabel": "Buat Criteria baru",
+                "createOrEditLabel": "Buat atau edit Criteria",
+                "search": "Cari Criteria"
+            },
+            "created": "Criteria dengan id {{ param }} telah dibuat",
+            "updated": "Criteria dengan id {{ param }} telah diperbaharui",
+            "deleted": "Criteria dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Criteria {{ id }}?"
+            },
+            "detail": {
+                "title": "Criteria"
+            },
+            "name": "Name",
+            "description": "Description",
+            "level": "Level",
+            "type": "Type",
+            "criteria": "Criteria"
+        }
+    }
+}

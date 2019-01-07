@@ -1,0 +1,15 @@
+{
+    "viewApp": {
+        "request": {
+            "home": {
+                "title": "Request",
+                "reminder": "Please attach an excel file that contains all the necessary information",
+                "attach": "Attach file",
+                "company": "Company"
+            },
+            "button": {
+                "request": "Request Generating Excel"
+            }
+        }
+    }
+}

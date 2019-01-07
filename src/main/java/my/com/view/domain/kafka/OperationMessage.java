@@ -18,6 +18,8 @@ public class OperationMessage implements Serializable {
 
     private Long id;
 
+    private String filename;
+
     public Long getId() {
         return id;
     }
@@ -26,16 +28,27 @@ public class OperationMessage implements Serializable {
         this.id = id;
     }
 
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+
     @Override
     public String toString() {
         return "OperationMessage{" +
             "id=" + id +
+            ", filename='" + filename + '\'' +
             '}';
     }
 
     public static class OperationMessageBuilder {
 
         private Long id;
+
+        private String filename;
 
         public static OperationMessageBuilder builder() {
             return new OperationMessageBuilder();
@@ -46,10 +59,16 @@ public class OperationMessage implements Serializable {
             return this;
         }
 
+        public OperationMessageBuilder setFilename(String filename) {
+            this.filename = filename;
+            return this;
+        }
+
         public OperationMessage build() {
             OperationMessage operationMessage = new OperationMessage();
 
             operationMessage.setId(id);
+            operationMessage.setFilename(filename);
 
             return operationMessage;
         }

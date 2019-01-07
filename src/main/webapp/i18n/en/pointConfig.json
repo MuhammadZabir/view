@@ -1,0 +1,27 @@
+
+{
+    "viewApp": {
+        "pointConfig" : {
+            "home": {
+                "title": "Point Configs",
+                "createLabel": "Create a new Point Config",
+                "createOrEditLabel": "Create or edit a Point Config",
+                "search": "Search for Point Config"
+            },
+            "created": "A new Point Config is created with identifier {{ param }}",
+            "updated": "A Point Config is updated with identifier {{ param }}",
+            "deleted": "A Point Config is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Point Config {{ id }}?"
+            },
+            "detail": {
+                "title": "Point Config"
+            },
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "issueDifficulty": "Issue Difficulty",
+            "company": "Company",
+            "statusCategory": "Status Category"
+        }
+    }
+}

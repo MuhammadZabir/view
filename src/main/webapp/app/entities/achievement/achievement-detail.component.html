@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="achievement">
+            <h2><span jhiTranslate="viewApp.achievement.detail.title">Achievement</span> {{achievement.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="viewApp.achievement.status">Status</span></dt>
+                <dd>
+                    <span>{{achievement.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="viewApp.achievement.user">User</span></dt>
+                <dd>
+                    {{achievement.user?.login}}
+                </dd>
+                <dt><span jhiTranslate="viewApp.achievement.department">Department</span></dt>
+                <dd>
+                    <div *ngIf="achievement.department">
+                        <a [routerLink]="['/department', achievement.department?.id, 'view']">{{achievement.department?.name}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="viewApp.achievement.criteria">Criteria</span></dt>
+                <dd>
+                    <div *ngIf="achievement.criteria">
+                        <a [routerLink]="['/criteria', achievement.criteria?.id, 'view']">{{achievement.criteria?.name}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/achievement', achievement.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

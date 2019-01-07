@@ -4,6 +4,7 @@
 /build/www/**
 /src/test/javascript/coverage/
 /elasticsearch-5.6.10/
+/kafka_2.11-2.1.0/
 
 ######################
 # Node

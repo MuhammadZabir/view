@@ -25,10 +25,10 @@ public class Department extends AbstractAuditingEntity {
     @JsonIgnoreProperties("departments")
     private Company company;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "department")
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER, mappedBy = "department")
     private Set<Achievement> achievements = new HashSet<>();
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "department")
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER, mappedBy = "department")
     private Set<User> user;
 
     public String getName() {
@@ -126,11 +126,10 @@ public class Department extends AbstractAuditingEntity {
     @Override
     public String toString() {
         return "Department{" +
-            ", name='" + name + '\'' +
+            "name='" + name + '\'' +
             ", description='" + description + '\'' +
             ", company=" + company +
             ", achievements=" + achievements +
-            ", user=" + user +
             '}';
     }
 }

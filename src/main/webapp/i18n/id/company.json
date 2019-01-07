@@ -1,0 +1,25 @@
+
+{
+    "viewApp": {
+        "company" : {
+            "home": {
+                "title": "Companies",
+                "createLabel": "Buat Company baru",
+                "createOrEditLabel": "Buat atau edit Company",
+                "search": "Cari Company"
+            },
+            "created": "Company dengan id {{ param }} telah dibuat",
+            "updated": "Company dengan id {{ param }} telah diperbaharui",
+            "deleted": "Company dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Company {{ id }}?"
+            },
+            "detail": {
+                "title": "Company"
+            },
+            "name": "Name",
+            "department": "Department",
+            "pointConfig": "Point Config"
+        }
+    }
+}

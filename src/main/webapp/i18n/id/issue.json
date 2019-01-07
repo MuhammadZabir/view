@@ -1,0 +1,33 @@
+
+{
+    "viewApp": {
+        "issue" : {
+            "home": {
+                "title": "Issues",
+                "createLabel": "Buat Issue baru",
+                "createOrEditLabel": "Buat atau edit Issue",
+                "search": "Cari Issue"
+            },
+            "created": "Issue dengan id {{ param }} telah dibuat",
+            "updated": "Issue dengan id {{ param }} telah diperbaharui",
+            "deleted": "Issue dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Issue {{ id }}?"
+            },
+            "detail": {
+                "title": "Issue"
+            },
+            "name": "Name",
+            "type": "Type",
+            "category": "Category",
+            "durationStart": "Duration Start",
+            "expectedDurationEnd": "Expected Duration End",
+            "durationEnd": "Duration End",
+            "description": "Description",
+            "status": "Status",
+            "commentIssue": "Comment Issue",
+            "issueDifficulty": "Issue Difficulty",
+            "user": "User"
+        }
+    }
+}

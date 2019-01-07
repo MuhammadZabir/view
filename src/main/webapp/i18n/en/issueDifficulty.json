@@ -1,0 +1,26 @@
+
+{
+    "viewApp": {
+        "issueDifficulty" : {
+            "home": {
+                "title": "Issue Difficulties",
+                "createLabel": "Create a new Issue Difficulty",
+                "createOrEditLabel": "Create or edit a Issue Difficulty",
+                "search": "Search for Issue Difficulty"
+            },
+            "created": "A new Issue Difficulty is created with identifier {{ param }}",
+            "updated": "A Issue Difficulty is updated with identifier {{ param }}",
+            "deleted": "A Issue Difficulty is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Issue Difficulty {{ id }}?"
+            },
+            "detail": {
+                "title": "Issue Difficulty"
+            },
+            "name": "Name",
+            "value": "Value",
+            "issue": "Issue",
+            "pointConfig": "Point Config"
+        }
+    }
+}

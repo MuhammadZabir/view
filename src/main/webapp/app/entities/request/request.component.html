@@ -1,0 +1,49 @@
+<div>
+    <h2>
+        <span jhiTranslate="viewApp.request.home.title">Request</span>
+    </h2>
+    <br/>
+    <div class="fluid-container">
+        <div class="row justify-content-center align-items-center flex-column">
+            <div class="col-md-4">
+                <label class="form-control-label" jhiTranslate="viewApp.request.home.company" for="companyId">Company</label>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center flex-column">
+            <div class="col-md-4">
+                <select class="form-control" id="field_user" name="user" [(ngModel)]="companyId">
+                    <option [ngValue]="null">Please Select</option>
+                    <option [ngValue]="company.id" *ngFor="let company of companies">
+                        {{company.name}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <br/>
+        <div class="row justify-content-center align-items-center flex-column">
+            <div class="col-md-4">
+                <span jhiTranslate="viewApp.request.home.reminder">Please attach an excel file that contains all the necessary information</span>
+            </div>
+        </div>
+        <br/>
+        <div class="row justify-content-center align-items-center flex-column">
+            <div class="col-md-4">
+                <label class="form-control-label" jhiTranslate="viewApp.request.home.attach" for="attachFile">Attach file</label>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center flex-column">
+            <div class="col-md-4">
+                <input class="form-control" id="attachFile" name="attachFile" type="file"
+                    (click)="reset(attachmentElement)" (change)="selectAttachment($event)" #attachmentElement/>
+            </div>
+        </div>
+        <br/>
+        <div class="row justify-content-center align-items-center flex-column">
+            <div class="col-md-2">
+                <button type="submit" id="save-entity" class="btn btn-primary" [disabled]="!companyId || !attachmentEvent" (click)="request()">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="viewApp.request.button.request">Request Generating Excel</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

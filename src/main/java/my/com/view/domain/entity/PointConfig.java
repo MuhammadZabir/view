@@ -2,10 +2,7 @@ package my.com.view.domain.entity;
 
 import org.springframework.data.elasticsearch.annotations.Document;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.ZonedDateTime;
 import java.util.HashSet;
 import java.util.Objects;
@@ -22,10 +19,10 @@ public class PointConfig extends AbstractAuditingEntity {
     @Column(name = "end_date")
     private ZonedDateTime endDate;
 
-    @OneToMany(mappedBy = "pointConfig")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "pointConfig")
     private Set<IssueDifficulty> issueDifficulties = new HashSet<>();
 
-    @OneToMany(mappedBy = "pointConfig")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "pointConfig")
     private Set<StatusCategory> statusCategories = new HashSet<>();
 
     public ZonedDateTime getStartDate() {

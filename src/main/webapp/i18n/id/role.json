@@ -1,0 +1,25 @@
+
+{
+    "viewApp": {
+        "role" : {
+            "home": {
+                "title": "Roles",
+                "createLabel": "Buat Role baru",
+                "createOrEditLabel": "Buat atau edit Role",
+                "search": "Cari Role"
+            },
+            "created": "Role dengan id {{ param }} telah dibuat",
+            "updated": "Role dengan id {{ param }} telah diperbaharui",
+            "deleted": "Role dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Role {{ id }}?"
+            },
+            "detail": {
+                "title": "Role"
+            },
+            "name": "Name",
+            "description": "Description",
+            "permission": "Permission"
+        }
+    }
+}

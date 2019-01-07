@@ -22,10 +22,6 @@ import java.util.Set;
 @Document(indexName = "user")
 public class User extends AbstractAuditingEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     @NotNull
     @Pattern(regexp = Constants.LOGIN_REGEX)
     @Size(min = 1, max = 50)
@@ -81,7 +77,7 @@ public class User extends AbstractAuditingEntity {
     private Instant resetDate = null;
 
     @JsonIgnore
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "jhi_user_authority",
         joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
@@ -91,29 +87,21 @@ public class User extends AbstractAuditingEntity {
     private Set<Authority> authorities = new HashSet<>();
 
     @JsonIgnore
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "user")
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER, mappedBy = "user")
     private Set<PersistentToken> persistentTokens = new HashSet<>();
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "user")
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER, mappedBy = "user")
     private Set<Issue> issues;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "user")
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER, mappedBy = "user")
     private Set<Feedback> feedbacks;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "user")
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER, mappedBy = "user")
     private Set<CommentIssue> commentIssues;
 
     @ManyToOne
     @JoinColumn(name = "department_id")
     private Department department;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getLogin() {
         return login;
@@ -282,8 +270,7 @@ public class User extends AbstractAuditingEntity {
     @Override
     public String toString() {
         return "User{" +
-            "id=" + id +
-            ", login='" + login + '\'' +
+            "login='" + login + '\'' +
             ", password='" + password + '\'' +
             ", firstName='" + firstName + '\'' +
             ", lastName='" + lastName + '\'' +
@@ -297,9 +284,6 @@ public class User extends AbstractAuditingEntity {
             ", resetDate=" + resetDate +
             ", authorities=" + authorities +
             ", persistentTokens=" + persistentTokens +
-            ", issues=" + issues +
-            ", feedbacks=" + feedbacks +
-            ", commentIssues=" + commentIssues +
             ", department=" + department +
             '}';
     }
