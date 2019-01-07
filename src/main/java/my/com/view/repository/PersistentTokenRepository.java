@@ -1,7 +1,7 @@
 package my.com.view.repository;
 
-import my.com.view.domain.PersistentToken;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.PersistentToken;
+import my.com.view.domain.entity.User;
 import java.time.LocalDate;
 import org.springframework.data.jpa.repository.JpaRepository;
 

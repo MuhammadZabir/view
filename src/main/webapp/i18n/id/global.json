@@ -7,6 +7,18 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "company": "Company",
+                "department": "Department",
+                "criteria": "Criteria",
+                "achievement": "Achievement",
+                "issue": "Issue",
+                "commentIssue": "Comment Issue",
+                "feedback": "Feedback",
+                "issueDifficulty": "Issue Difficulty",
+                "permission": "Permission",
+                "pointConfig": "Point Config",
+                "role": "Role",
+                "statusCategory": "Status Category",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

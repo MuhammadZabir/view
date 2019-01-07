@@ -3,7 +3,7 @@ package my.com.view.repository;
 import my.com.view.ViewApp;
 import my.com.view.config.Constants;
 import my.com.view.config.audit.AuditEventConverter;
-import my.com.view.domain.PersistentAuditEvent;
+import my.com.view.domain.entity.PersistentAuditEvent;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

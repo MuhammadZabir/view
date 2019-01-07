@@ -1,6 +1,6 @@
 package my.com.view.service;
 
-import my.com.view.domain.User;
+import my.com.view.domain.entity.User;
 
 import io.github.jhipster.config.JHipsterProperties;
 

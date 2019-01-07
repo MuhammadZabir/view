@@ -2,8 +2,8 @@ package my.com.view.service.dto;
 
 import my.com.view.config.Constants;
 
-import my.com.view.domain.Authority;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.Authority;
+import my.com.view.domain.entity.User;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -63,7 +63,7 @@ public class UserDTO {
         this.firstName = user.getFirstName();
         this.lastName = user.getLastName();
         this.email = user.getEmail();
-        this.activated = user.getActivated();
+        this.activated = user.isActivated();
         this.imageUrl = user.getImageUrl();
         this.langKey = user.getLangKey();
         this.createdBy = user.getCreatedBy();

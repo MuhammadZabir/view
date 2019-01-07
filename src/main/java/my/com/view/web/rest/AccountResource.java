@@ -2,9 +2,9 @@ package my.com.view.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 
-import my.com.view.domain.PersistentToken;
+import my.com.view.domain.entity.PersistentToken;
 import my.com.view.repository.PersistentTokenRepository;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.User;
 import my.com.view.repository.UserRepository;
 import my.com.view.security.SecurityUtils;
 import my.com.view.service.MailService;

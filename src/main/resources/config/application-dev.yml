@@ -32,9 +32,9 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mariadb://localhost:3306/View
+        url: jdbc:mariadb://localhost:3306/hrpr
         username: root
-        password:
+        password: root
         hikari:
             data-source-properties:
                 cachePrepStmts: true
@@ -69,6 +69,8 @@ spring:
         cache-duration: PT1S # 1 second, see the ISO 8601 standard
     thymeleaf:
         cache: false
+    kafka:
+        bootstrap-servers: 127.0.0.1:9092
 
 # ===================================================================
 # To enable SSL, generate a certificate using:
@@ -136,4 +138,9 @@ jhipster:
 # https://www.jhipster.tech/common-application-properties/
 # ===================================================================
 
-# application:
+application:
+    operation:
+        kafka:
+            adhoc:
+                group: operation-execute-group
+                topic: operation-execute

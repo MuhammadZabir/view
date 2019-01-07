@@ -1,7 +1,7 @@
 package my.com.view.service.mapper;
 
-import my.com.view.domain.Authority;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.Authority;
+import my.com.view.domain.entity.User;
 import my.com.view.service.dto.UserDTO;
 
 import org.springframework.stereotype.Service;

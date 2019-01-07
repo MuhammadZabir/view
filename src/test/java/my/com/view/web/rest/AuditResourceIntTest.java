@@ -2,7 +2,7 @@ package my.com.view.web.rest;
 
 import my.com.view.ViewApp;
 import my.com.view.config.audit.AuditEventConverter;
-import my.com.view.domain.PersistentAuditEvent;
+import my.com.view.domain.entity.PersistentAuditEvent;
 import my.com.view.repository.PersistenceAuditEventRepository;
 import my.com.view.service.AuditEventService;
 import org.junit.Before;

@@ -2,7 +2,7 @@ package my.com.view.web.rest;
 
 import my.com.view.config.Constants;
 import com.codahale.metrics.annotation.Timed;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.User;
 import my.com.view.repository.UserRepository;
 import my.com.view.repository.search.UserSearchRepository;
 import my.com.view.security.AuthoritiesConstants;

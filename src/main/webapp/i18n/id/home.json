@@ -1,19 +1,14 @@
 {
     "home": {
-        "title": "Selamat Datang, Java Hipster!",
-        "subtitle": "Ini adalah halaman utama anda",
+        "title": "Selamat Datang, ke pembangunan prototaip aplikasi sesawang!",
+        "subtitle": "Ini adalah halaman utama",
         "logged": {
             "message": "Anda login sebagai \"{{username}}\"."
         },
-        "question": "Jika anda punya pertanyaan tentang JHipster:",
+        "question": "Jika anda mempunyai pertanyaan:",
         "link": {
-            "homepage": "JHipster homepage",
-            "stackoverflow": "JHipster on Stack Overflow",
-            "bugtracker": "JHipster bug tracker",
-            "chat": "JHipster public chat room",
-            "follow": "follow @java_hipster on Twitter"
-        },
-        "like": "Jika anda menyukai JHipster, jangan lupa beri kami rating",
-        "github": "GitHub"
+            "github": "GitHub",
+            "phoneNumber": "Nombor Telefon: +60 137772113"
+        }
     }
 }

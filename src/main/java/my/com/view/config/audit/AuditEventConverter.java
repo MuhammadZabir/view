@@ -1,6 +1,6 @@
 package my.com.view.config.audit;
 
-import my.com.view.domain.PersistentAuditEvent;
+import my.com.view.domain.entity.PersistentAuditEvent;
 
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;

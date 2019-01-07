@@ -1,6 +1,6 @@
 package my.com.view.repository;
 
-import my.com.view.domain.Authority;
+import my.com.view.domain.entity.Authority;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -2,7 +2,7 @@ package my.com.view.service;
 import my.com.view.config.Constants;
 
 import my.com.view.ViewApp;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.Before;
 import org.junit.Test;

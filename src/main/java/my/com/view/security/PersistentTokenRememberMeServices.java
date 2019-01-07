@@ -1,6 +1,6 @@
 package my.com.view.security;
 
-import my.com.view.domain.PersistentToken;
+import my.com.view.domain.entity.PersistentToken;
 import my.com.view.repository.PersistentTokenRepository;
 import my.com.view.repository.UserRepository;
 import my.com.view.service.util.RandomUtil;

@@ -5,6 +5,29 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190101191749_added_entity_Company.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190101192857_added_entity_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190101193937_added_entity_Criteria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190101194328_added_entity_Achievement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104183322_added_entity_Issue.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104184110_added_entity_CommentIssue.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104185908_added_entity_Feedback.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104194326_added_entity_IssueDifficulty.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104195559_added_entity_Permission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104210036_added_entity_PointConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104210831_added_entity_Role.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104211728_added_entity_StatusCategory.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20190101192857_added_entity_constraints_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190101193937_added_entity_constraints_Criteria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190101194328_added_entity_constraints_Achievement.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104184110_added_entity_constraints_CommentIssue.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104194326_added_entity_constraints_IssueDifficulty.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104183322_added_entity_constraints_Issue.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104195559_added_entity_constraints_Permission.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190101191749_added_entity_constraints_Company.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104210831_added_entity_constraints_Role.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104211728_added_entity_constraints_StatusCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190104185908_added_entity_constraints_Feedback.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

@@ -2,12 +2,26 @@
     "global": {
         "title": "View",
         "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
+        "request": "Request",
         "menu": {
             "home": "Home",
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
-                "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+                "company": "Company",
+                "department": "Department",
+                "criteria": "Criteria",
+                "achievement": "Achievement",
+                "issue": "Issue",
+                "commentIssue": "Comment Issue",
+                "feedback": "Feedback",
+                "issueDifficulty": "Issue Difficulty",
+                "permission": "Permission",
+                "pointConfig": "Point Config",
+                "role": "Role",
+                "statusCategory": "Status Category",
+                "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+                "configuration": "Configuration"
             },
             "account": {
                 "main": "Account",

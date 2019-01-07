@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "issueDifficulty",
+            "otherEntityName": "issueDifficulty",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "pointConfig"
+        },
+        {
+            "relationshipName": "company",
+            "otherEntityName": "company",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "name",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "pointConfig"
+        },
+        {
+            "relationshipName": "statusCategory",
+            "otherEntityName": "statusCategory",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "pointConfig"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "startDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20190104210036",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "serviceClass",
+    "entityTableName": "point_config",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

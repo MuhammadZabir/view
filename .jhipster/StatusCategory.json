@@ -1,0 +1,36 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "pointConfig",
+            "otherEntityName": "pointConfig",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "point",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "main",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20190104211728",
+    "dto": "no",
+    "searchEngine": "elasticsearch",
+    "service": "serviceClass",
+    "entityTableName": "status_category",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

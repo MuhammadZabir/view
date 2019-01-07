@@ -1,4 +1,4 @@
-package my.com.view.domain;
+package my.com.view.domain.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

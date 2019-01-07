@@ -1,4 +1,4 @@
-package my.com.view.domain;
+package my.com.view.domain.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -9,8 +9,6 @@ import java.util.Map;
 
 /**
  * Persist AuditEvent managed by the Spring Boot actuator.
- *
- * @see org.springframework.boot.actuate.audit.AuditEvent
  */
 @Entity
 @Table(name = "jhi_persistent_audit_event")

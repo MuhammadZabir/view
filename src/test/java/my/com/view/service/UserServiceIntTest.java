@@ -2,8 +2,8 @@ package my.com.view.service;
 
 import my.com.view.ViewApp;
 import my.com.view.config.Constants;
-import my.com.view.domain.PersistentToken;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.PersistentToken;
+import my.com.view.domain.entity.User;
 import my.com.view.repository.PersistentTokenRepository;
 import my.com.view.repository.search.UserSearchRepository;
 import my.com.view.repository.UserRepository;
@@ -30,7 +30,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.times;

@@ -1,7 +1,7 @@
 package my.com.view.security;
 
 import my.com.view.ViewApp;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.User;
 import my.com.view.repository.UserRepository;
 
 import org.apache.commons.lang3.RandomStringUtils;

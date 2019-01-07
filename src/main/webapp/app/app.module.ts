@@ -9,13 +9,13 @@ import { JhiEventManager } from 'ng-jhipster';
 import { AuthExpiredInterceptor } from './blocks/interceptor/auth-expired.interceptor';
 import { ErrorHandlerInterceptor } from './blocks/interceptor/errorhandler.interceptor';
 import { NotificationInterceptor } from './blocks/interceptor/notification.interceptor';
-import { ViewSharedModule } from 'app/shared';
-import { ViewCoreModule } from 'app/core';
+import { ViewSharedModule } from './shared';
+import { ViewCoreModule } from './core';
 import { ViewAppRoutingModule } from './app-routing.module';
 import { ViewHomeModule } from './home/home.module';
 import { ViewAccountModule } from './account/account.module';
 import { ViewEntityModule } from './entities/entity.module';
-import { StateStorageService } from 'app/core/auth/state-storage.service';
+import { StateStorageService } from './core/auth/state-storage.service';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 

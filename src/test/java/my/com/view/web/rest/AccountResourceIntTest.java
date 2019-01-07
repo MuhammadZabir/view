@@ -2,9 +2,9 @@ package my.com.view.web.rest;
 
 import my.com.view.config.Constants;
 import my.com.view.ViewApp;
-import my.com.view.domain.Authority;
-import my.com.view.domain.PersistentToken;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.Authority;
+import my.com.view.domain.entity.PersistentToken;
+import my.com.view.domain.entity.User;
 import my.com.view.repository.AuthorityRepository;
 import my.com.view.repository.PersistentTokenRepository;
 import my.com.view.repository.UserRepository;
@@ -447,7 +447,7 @@ public class AccountResourceIntTest {
             .andExpect(status().isOk());
 
         user = userRepository.findOneByLogin(user.getLogin()).orElse(null);
-        assertThat(user.getActivated()).isTrue();
+        assertThat(user.isActivated()).isTrue();
     }
 
     @Test
@@ -492,7 +492,7 @@ public class AccountResourceIntTest {
         assertThat(updatedUser.getLangKey()).isEqualTo(userDTO.getLangKey());
         assertThat(updatedUser.getPassword()).isEqualTo(user.getPassword());
         assertThat(updatedUser.getImageUrl()).isEqualTo(userDTO.getImageUrl());
-        assertThat(updatedUser.getActivated()).isEqualTo(true);
+        assertThat(updatedUser.isActivated()).isEqualTo(true);
         assertThat(updatedUser.getAuthorities()).isEmpty();
     }
 

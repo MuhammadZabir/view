@@ -1,7 +1,7 @@
 package my.com.view.service;
 
-import my.com.view.domain.Authority;
-import my.com.view.domain.User;
+import my.com.view.domain.entity.Authority;
+import my.com.view.domain.entity.User;
 import my.com.view.repository.AuthorityRepository;
 import my.com.view.repository.PersistentTokenRepository;
 import my.com.view.config.Constants;
@@ -83,7 +83,7 @@ public class UserService {
 
     public Optional<User> requestPasswordReset(String mail) {
         return userRepository.findOneByEmailIgnoreCase(mail)
-            .filter(User::getActivated)
+            .filter(User::isActivated)
             .map(user -> {
                 user.setResetKey(RandomUtil.generateResetKey());
                 user.setResetDate(Instant.now());

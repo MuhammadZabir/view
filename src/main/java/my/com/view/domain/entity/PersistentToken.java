@@ -1,4 +1,4 @@
-package my.com.view.domain;
+package my.com.view.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.time.LocalDate;
@@ -11,8 +11,6 @@ import java.io.Serializable;
 
 /**
  * Persistent tokens are used by Spring Security to automatically log in users.
- *
- * @see my.com.view.security.PersistentTokenRememberMeServices
  */
 @Entity
 @Table(name = "jhi_persistent_token")
@@ -29,7 +27,7 @@ public class PersistentToken implements Serializable {
     @NotNull
     @Column(name = "token_value", nullable = false)
     private String tokenValue;
-    
+
     @Column(name = "token_date")
     private LocalDate tokenDate;
 
@@ -40,7 +38,6 @@ public class PersistentToken implements Serializable {
 
     @Column(name = "user_agent")
     private String userAgent;
-        
 
     @JsonIgnore
     @ManyToOne

@@ -1,6 +1,6 @@
 package my.com.view.repository;
 
-import my.com.view.domain.User;
+import my.com.view.domain.entity.User;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
